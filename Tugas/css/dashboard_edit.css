@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background-color: #0f0f0f;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  color: #cfcfcf;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background-color: #1e1e1e;
+  color: #ff6a00; /* Orange highlight */
+}
+
+.sidebar a:hover svg path,
+.sidebar a.active svg path {
+  fill: #ff6a00;
+}
+
+.sidebar .logout {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: center;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.sidebar .logout:hover {
+  background: #e50914;
+  border-color: #e50914;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 230px;
+  padding: 30px;
+  width: calc(100% - 230px);
+}
+
+.main-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form-container {
+  display: flex;
+  gap: 20px;
+}
+
+.form-left,
+.form-right {
+  background: #161616;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+}
+
+.form-left h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ff6a00;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Right preview */
+.preview {
+  text-align: center;
+}
+
+.preview img {
+  width: 100%;
+  max-width: 350px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #2a2a2a;
+}
+
+
+.preview h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #cfcfcf;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-confirm {
+  background: #22c55e;
+  color: #fff;
+}
+
+.btn-confirm:hover {
+  background: #16a34a;
+}
+
+.btn-cancel {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn-cancel:hover {
+  background: #b91c1c;
+}
+
+
+/* Dropdown for status film */
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 14px;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-group select:hover {
+  background: #3a3a3a;
+}
+
+.form-group select:focus {
+  border: 1px solid #ff6a00;
+}
+
+.status {
+  position: relative;
+}
+.status::after {
+  content: "▼";
+  position: absolute;
+  right: 15px;
+  top: 38px;
+  color: #ff6a00;
+  pointer-events: none;
+  font-size: 12px;
+}
