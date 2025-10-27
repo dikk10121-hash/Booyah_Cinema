@@ -1,0 +1,168 @@
+Reset dasar */ * {
+  scrollbar-width: none;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 50px;
+  background: black;
+  position: relative;
+  box-shadow: 0px 4px 7px #f3f4f621, 0px 0px 2px #f3f4f614;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 50px;
+  height: auto;
+}
+
+header .logo {
+  color: #ff6600;
+  font-size: 20px;
+}
+header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ff6600;
+}
+/* Hero Section */
+.cinema {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.search-form {
+  margin-top: 20px;
+}
+
+.search-form input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 250px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  border: none;
+  background: orange;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero-img img {
+  margin-top: 20px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Section Titles */
+section h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 2em;
+  color: #df6d30;
+}
+
+.now-playing {
+  margin-top: 200px;
+}
+
+/* Film List */
+.film-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.film-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+.film-card img {
+  width: 100%; /* penuh mengikuti card */
+  height: 70%; /* isi penuh wadah */
+  object-fit: cover; /* isi penuh tapi tetap proporsional */
+  border-radius: 10px;
+  display: block;
+}
+.film-card h4 {
+  margin: 10px 0;
+}
+.film-card p {
+  font-size: 0.9em;
+  color: #ccc;
+}
+.film-card button,
+.film-card a {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 15px;
+  background: #df6d30;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.film-card button:hover,
+.film-card a:hover {
+  background: darkorange;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background-color: #0f0f0f;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo h2 {
+  color: #ff6a00;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.sidebar .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  color: #cfcfcf;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: all .3s ease;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background-color: #1e1e1e;
+  color: #ff6a00; /* Orange highlight */
+}
+
+.sidebar a:hover svg path,
+.sidebar a.active svg path {
+  fill: #ff6a00;
+}
+
+.sidebar .logout {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: center;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.sidebar .logout:hover {
+  background: #e50914;
+  border-color: #e50914;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 94px;
+  padding: 30px;
+  width: calc(100% - 230px);
+}
+
+.main-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Card container */
+.card {
+  background-color: #161616;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ff6a00; /* Orange accent */
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: #1f1f1f;
+}
+
+table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+}
+
+table td {
+  padding: 15px;
+  border-top: 1px solid #222;
+  vertical-align: middle;
+}
+
+table tbody tr:hover {
+  background-color: #222;
+}
+
+/* Action Buttons */
+.btn-edit,
+.btn-delete {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 6px;
+  transition: 0.3s;
+}
+
+.btn-edit {
+  background: #22c55e;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #16a34a;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background: #b91c1c;
+}

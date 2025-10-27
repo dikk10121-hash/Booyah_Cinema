@@ -1,0 +1,172 @@
+/* Reset dasar */
+* {
+  scrollbar-width: none;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 50px;
+  background: black;
+  position: relative;
+  box-shadow: 0px 4px 7px #f3f4f621, 0px 0px 2px #f3f4f614;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 50px;
+  height: auto;
+}
+
+header .logo {
+  color: #ff6600;
+  font-size: 20px;
+}
+header nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ff6600;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.login-box {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.login-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.login-box h2 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-box label {
+  text-align: left;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.login-box input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.options .forgot {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.options .forgot:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background: #e65c00;
+}
+
+.divider {
+  margin: 10px 0;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.btn-register {
+  background: transparent;
+  border: 2px solid #ff6600;
+  color: #ff6600;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-register:hover {
+  background: #ff6600;
+  color: #fff;
+}
